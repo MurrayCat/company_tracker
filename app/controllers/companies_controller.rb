@@ -1,6 +1,8 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
   respond_to :html, :xml, :json
+  before_filter :authenticate_user!, :except =>[:show,:index]
+
 def index
     @companies = Company.all
     respond_with(@companies)
@@ -30,6 +32,12 @@ def index
   end
 
   def destroy
+    @branches = Branch.all
+    @branches.each do |branch|
+      if branch.company_id ==@company.id
+    branch.destroy
+      end
+    end
     @company.destroy
     respond_with(@company)
   end

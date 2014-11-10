@@ -1,6 +1,8 @@
 class BranchesController < ApplicationController
   before_action :set_branch, only: [:show, :edit, :update, :destroy]
   respond_to :html, :xml, :json
+  before_filter :authenticate_user!, :except =>[:show,:index]
+
   def index
     @branches = Branch.all
     respond_with(@branches)

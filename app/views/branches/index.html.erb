@@ -15,7 +15,7 @@
       <tr>
         <td><%= branch.name %></td>
         <td><%= branch.location %></td>
-        <td><%= branch.company %></td>
+        <td><%= branch.company.name %></td>
         <td><%= link_to 'Show', branch %></td>
         <td><%= link_to 'Edit', edit_branch_path(branch) %></td>
         <td><%= link_to 'Destroy', branch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
