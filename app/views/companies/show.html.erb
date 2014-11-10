@@ -9,6 +9,35 @@
   <strong>Description:</strong>
   <%= @company.description %>
 </p>
-
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %>
+<%i=0%>
+<% @branches.each do |branch| %>
+     <% if branch.company_id ==@company.id%>
+     <%i+=1%>
+   <%end%>
+<%end%>
+<%if i>0%>
+</br>
+<h1>Branches</h1>
+<table>
+<tr>
+   <th >Branch Name:</th>
+   <th >Location:</th>
+</tr>
+ 
+
+<%end%>
+<% @branches.each do |branch| %>
+    <% if branch.company_id ==@company.id%>
+		<tr>
+		  <td><%= branch.name%></td>
+		  <td><%= branch.location %></td>
+		</tr>
+
+	<%end%>
+</table >
+<%end%>
+
+
+

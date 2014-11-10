@@ -9,6 +9,7 @@ def index
   end
 
   def show
+    @branches = Branch.all
     respond_with(@company)
   end
 
