@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe "branches/new", :type => :view do
   before(:each) do
     @request.env["devise.mapping"] = Devise.mappings[:user]
-    sign_in FactoryGirl.create(:user)
     @company = FactoryGirl.create(:company)
 
     assign(:branch, Branch.new(
