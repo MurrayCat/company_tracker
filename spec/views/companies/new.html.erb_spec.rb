@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe "companies/new", :type => :view do
   before(:each) do
     assign(:company, Company.new(
-      :name => "MyString",
-      :description => "MyString"
+      :name => "Test Company",
+      :description => "Test Description"
     ))
   end
 

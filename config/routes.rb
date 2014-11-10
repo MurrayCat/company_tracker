@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :branches
 
   resources :companies
+  resources :users
   root :to => redirect("/companies")
 
   # The priority is based upon order of creation: first created -> highest priority.
