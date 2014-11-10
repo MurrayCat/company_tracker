@@ -1,7 +1,7 @@
-== README
+#README
 This is a basic rails app.
 Getting started:
-==1) Terminal commands (Start here)
+#1) Terminal commands (Start here)
 #Install gems
 bundle install
 #Creates dbs
@@ -10,7 +10,7 @@ rake db:migrate
 bundle exe guard
 #strats the server
 rails s
-==2) Using the app
+#2) Using the app
 Start the server:
 rails s
 Go to:
