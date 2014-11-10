@@ -1,6 +1,6 @@
 class BranchesController < ApplicationController
   before_action :set_branch, only: [:show, :edit, :update, :destroy]
-
+  respond_to :html, :xml, :json
   def index
     @branches = Branch.all
     respond_with(@branches)
