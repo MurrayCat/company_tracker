@@ -5,9 +5,9 @@ Getting started:
 #1) Terminal commands (Start here)
 #Install the  gems
 bundle install
-#Creates the  databases
+#Create the databases
 rake db:create
-#Migrate the databases
+#Run migrations
 rake db:migrate
 #Run guard for tests
 bundle exec guard
