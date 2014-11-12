@@ -22,9 +22,9 @@ http://0.0.0.0:3000
 
 #Sign in
 
-You cannot add , delete or edit unless you have logged in because of a gem I installed called devise.
+You can't add , delete or edit unless you have logged in because of a gem I installed called devise.
 
-You can try but it will take you to the login page or you can go to /users/sign_in and login.
+You can try but it will take you to the login page or you can go to /users/sign_in and login or sign up.
 
 #Add Edit Delete Show
 Once logged in you can create as many companies with as many branches as you like.
