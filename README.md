@@ -5,6 +5,8 @@ Getting started:
 #Install gems
 bundle install
 #Creates dbs
+rake db:create
+#The migrate the dbs
 rake db:migrate
 #runs guard for tests
 bundle exe guard
